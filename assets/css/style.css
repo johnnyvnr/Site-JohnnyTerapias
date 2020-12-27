@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Alike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+body {
+  background: rgb(255, 233, 239);
+  background: no-repeat;
+  margin: 0;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(98, 74, 89);
+}
+
+nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+
+.container > li {
+  flex: 1;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+nav a {
+  padding: 10px 25px;
+  display: block;
+  font-family: "Alike", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+nav li:hover a {
+  background-color: rgb(68, 50, 61);
+  color: white;
+}
+
+nav li:active a {
+  background-color: rgb(68, 50, 61);
+  color: white;
+}
+
+nav li ul {
+  width: auto;
+  float: left;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 42px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+nav li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav li ul li {
+  width: 100%;
+}
+
+nav li ul li a {
+  width: 100%;
+  text-align: left;
+}
+
+.lastone {
+  border-radius: 0px 0px 10px 10px;
+}
+
+nav li ul a:hover {
+  background-color: rgb(60, 44, 85);
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  min-width: 12.5rem;
+  max-width: 100rem;
+  height: 100vh;
+  border: none;
+  display: block;
+}
+
+.pagecover {
+    min-width: 12.5rem;
+    max-width: 100rem;
+    border: none;
+    display: absolute;
+  }
+
+.divreiki {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.whiteboxmain {
+  max-width: 80rem;
+  max-height: 40rem;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 0.75rem;
+}
+
+.main {
+  min-width: 40rem;
+  max-height: 20rem;
+  margin: 2rem;
+  padding: 0.75rem 7rem;
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(250, 212, 222);
+  color: rgb(68, 50, 61);
+  border-radius: 2rem;
+  font-size: large;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.paddbox {
+  padding: 0 7rem;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.arrowright{
+    align-self: center;
+    vertical-align: middle;
+    display: block;
+    position: relative;
+    padding: 0 2rem;      
+}
+
+.fa-arrow-circle-right {
+    color: rgb(68, 50, 61);
+  }
+
+.pulseEffect{
+    box-shadow: 0 0 0 0 rgb(60, 44, 85);
+    border-radius: 50%;
+    animation: peffect 1.72s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes peffect{
+    to{
+        box-shadow: 0 0 0 30px rgba(68, 50, 61, 0);
+    }
+}
+
+.boxdesc {
+  max-width: 25rem;
+  max-height: 70rem;
+  margin: 2rem;
+  padding: 3rem;
+  text-align: justify;
+  font-family: "Oswald", sans-serif;
+  color: rgb(68, 50, 61);
+  font-size: large;
+}
+
+.boxdesc > h2 {
+  text-align: center;
+  font-family: "Alike", serif;
+  font-size: xx-large;
+}
+
+.imagesgeral {
+  display: block;
+  max-width: 397px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.623);
+  box-shadow: 2px 3px 5px black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media all and (max-width: 320px) {
+  .container > li {
+    flex-basis: 100%;
+  }
+}
