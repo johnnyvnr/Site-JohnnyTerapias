@@ -163,18 +163,44 @@ nav li ul a:hover {
 }
 
 .paddbox {
-  padding: 0 7rem;
+  padding: 0 7rem 0 0;
   align-self: center;
   vertical-align: middle;
 }
 
-.arrowright{
-    align-self: center;
-    vertical-align: middle;
-    display: block;
-    position: relative;
-    padding: 0 2rem;      
+.paddboxtwo{
+  background-color: rgb(98, 74, 89);
+  min-width: 70rem;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
 }
+
+.pdtcontent{
+  height: 100%;
+  padding: 0 6rem;
+  font-family: "Alike", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdtcontent > img{
+  max-height: 30rem;
+}
+
+.arrowright{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 6rem 0 0; 
+    text-decoration: none;
+}
+
+
 
 .fa-arrow-circle-right {
     color: rgb(68, 50, 61);
